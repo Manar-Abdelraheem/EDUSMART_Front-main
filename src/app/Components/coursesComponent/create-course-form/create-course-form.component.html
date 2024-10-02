@@ -1,0 +1,50 @@
+<h3 class="text-lg font-semibold mb-4">Create Course</h3>
+<form class="space-y-4" FormGroup="courseFrom">
+  <!-- Course Title -->
+  <div>
+    <label for="title" class="block text-sm font-medium text-gray-700">Course Title</label>
+    <input type="text" id="title" formControlName="title" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  </div>
+
+  <!-- Course Description -->
+  <div>
+    <label for="description" class="block text-sm font-medium text-gray-700">Course Description</label>
+    <textarea id="description" formControlName="description" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+  </div>
+  <!-- course Price  -->
+  <div>
+    <label for="price" class="block text-sm font-medium text-gray-700">Course Price</label>
+    <input id="price" formControlName="price" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  </div>
+  <!-- category -->
+  <div>
+    <label for="category" class="block text-sm font-medium text-gray-700">Course Category</label>
+    <select id="category" formControlName="category" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      <option value="angular">Angular</option>
+      <option value="react">React</option>
+      <option value="typescript">TypeScript</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="instructorID" class="block text-sm font-medium text-gray-700">Course Category</label>
+    <select id="instructorID" formControlName="instructorID" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      <option value="Ahmed">Angular</option>
+      <option value="Sayed">React</option>
+      <option value="Mohamed">TypeScript</option>
+    </select>
+  </div>
+  <div>
+    <label for="image" class="block text-sm font-medium text-gray-700">Course Image</label>
+    <input id="image" type="file"  formControlName="image" class="py-1.5 px-2 mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+    />
+  </div>
+  
+
+  <!-- Submit Button -->
+  <div class="text-right">
+    <button  class="disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:bg-indigo-600 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+      Create Course
+    </button>
+  </div>
+</form>

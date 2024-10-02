@@ -1,0 +1,41 @@
+<!-- @if (user != null) {
+    <div>
+        <p>Course Title: {{user.title}}</p>
+        <p>Price: {{user.price}}</p>
+        <p>Description: {{user.description}}</p>
+        
+    </div>
+    <div>
+        <img [src]="base64Image" alt="User Image" />
+    </div>
+} @else {
+    <h1 class="alert alert-danger">Loading...</h1>
+} -->
+    <!-- Angular Template Syntax -->
+<div *ngIf="user; else loading">
+    <div class="card" style="width: 18rem;">
+        <img [src]="base64Image" class="card-img-top" alt="User Image" />
+        <div class="card-body">
+            <h5 class="card-title">{{user.title}}</h5>
+            <p class="card-text">
+                <strong>Price:</strong> {{user.price}} <br />
+                <strong>Description:</strong> {{user.description}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Loading message -->
+<ng-template #loading>
+    <h1 class="alert alert-danger">Loading...</h1>
+</ng-template>
+
+<!-- Fallback if no image -->
+<ng-template #noImage>
+    <img src="path-to-placeholder-image.jpg" class="card-img-top" alt="No Image Available" />
+</ng-template>
+
+
+
+
+

@@ -1,0 +1,69 @@
+<header>
+    <nav class="navbar" role="navigation">
+      <h1 class="logo">EduSmart</h1>
+      <div class="vertical-bar"></div>
+      <div class="search-container">
+        <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle">
+        <i class="fa fa-search" style="color: white;"></i>
+      </div>
+      <ul class="nav-links" [class.active]="isMenuOpen">
+        <li><a routerLink="/">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#" class="register">Register Now!</a></li>
+      </ul>
+      <div class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+    </nav>
+
+    
+    <div class="main-banner" id="top">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-lg-12">
+            <div class="owl-carousel owl-banner owl-loaded owl-drag">
+              <div class="owl-stage-outer">
+                <div class="owl-stage" style="transition: all; width: 3822px; transform: translate3d(-1092px, 0px, 0px);">
+                  <div class="owl-item cloned" style="width: 936px; margin-right: 30px;">
+                    <div class="item item-2">
+                      <div class="header-text">
+                        <span class="category">Best Result</span>
+                        <h2>Get the best result out of your effort</h2>
+                        <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
+                        <div class="buttons">
+                          <div class="main-button">
+                            <a href="#">Request Demo</a>
+                          </div>
+                          <div class="icon-button">
+                            <a href="#">
+                              <i class="fa fa-play">::before</i>
+                              What's the best result?
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav"></div>
+              <div class="owl-dots"></div>
+              
+
+            </div>
+
+          </div>
+
+        </div> -->
+        
+      </div>
+      <img src="/assets/images/banner.jpg" alt="" class="center">
+    </div>
+
+  </header>
